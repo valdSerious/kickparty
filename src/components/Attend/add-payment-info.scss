@@ -1,0 +1,39 @@
+.add-payment-info {
+  height: 100%;
+
+  .card-box {
+    height: inherit;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+
+      input {
+        width: 200px;
+      }
+    }
+
+    label.expiration input {
+      width: 97px;
+    }
+
+    button {
+      align-self: center;
+      padding: 6px;
+      margin-top: 10px;
+    }
+  }
+
+  #default-checkbox {
+    text-align: center;
+  }
+}

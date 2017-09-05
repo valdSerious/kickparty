@@ -1,0 +1,52 @@
+.event-resourceTypes {
+  $color: rgb(172, 178, 184);
+
+  h2 {
+    background-color: transparent;
+    color: $color;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: .7em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+    font-size: .8em;
+    margin: 0 0 24px 0;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 12px;
+
+    .header {
+      background-color: $color;
+      color: white;
+      font-size: 1.5em;
+      padding: 6px 12px;
+      text-transform: uppercase;
+    }
+
+    .action {
+      float: right;
+      padding: 0;
+      margin: 0;
+      text-align: right;
+
+      a {
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+      }
+    }
+
+    .title {
+      text-align: left;
+      letter-spacing: 2px;
+    }
+  }
+}

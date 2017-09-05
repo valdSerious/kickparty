@@ -1,0 +1,38 @@
+[
+  {
+    "id":1,
+    "name":"Wedding"
+  },
+  {
+    "id":2,
+    "name":"Concert"
+  },
+  {
+    "id":3,
+    "name":"Bachelorette Party"
+  },
+  {
+    "id":4,
+    "name":"Bachelor Party"
+  },
+  {
+    "id":5,
+    "name":"Reunion"
+  },
+  {
+    "id":6,
+    "name":"Engagement Party"
+  },
+  {
+    "id":7,
+    "name":"Birthday Party"
+  },
+  {
+    "id":8,
+    "name":"Holiday Party"
+  },
+  {
+    "id":9,
+    "name":"Other"
+  }
+]

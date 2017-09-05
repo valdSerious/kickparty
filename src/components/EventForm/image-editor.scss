@@ -1,0 +1,25 @@
+.image-editor {
+  width: 100%;
+  box-shadow: 0 1px 5px #ccc;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+
+  > div {
+    max-height: 400;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+
+    input {
+      box-shadow: none;
+      width: 150px;
+    }
+  }
+}

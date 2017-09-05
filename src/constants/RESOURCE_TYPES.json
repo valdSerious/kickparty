@@ -1,0 +1,34 @@
+[
+  {
+    "id":2,
+    "name":"Photographer"
+  },
+  {
+    "id":3,
+    "name":"Bartender"
+  },
+  {
+    "id":4,
+    "name":"Band"
+  },
+  {
+    "id":5,
+    "name":"Catering"
+  },
+  {
+    "id":6,
+    "name":"Venue"
+  },
+  {
+    "id":7,
+    "name":"Limo/Bus"
+  },
+  {
+    "id":8,
+    "name":"Boat"
+  },
+  {
+    "id":9,
+    "name":"Other"
+  }
+]

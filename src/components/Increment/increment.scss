@@ -1,0 +1,72 @@
+@mixin background-transition() {
+  -webkit-transition: background-color .2s ease;
+  -moz-transition: background-color .2s ease;
+  -ms-transition: background-color .2s ease;
+  -o-transition: background-color .2s ease;
+  transition: background-color .2s ease;
+}
+
+@mixin radial-gradient($color1, $color2) {
+  background: $color1;
+  background: -moz-radial-gradient(center, ellipse cover,  $color1 0%, $color2 100%);
+  background: -webkit-radial-gradient(center, ellipse cover,  $color1 0%, $color2 100%);
+  background: radial-gradient(ellipse at center,  $color1 0%, $color2 100%);
+}
+
+.incrementer {
+  $primaryColor: #B8E986;
+  $secondaryColor: darken($primaryColor, 10%);
+
+  display: flex;
+  justify-content: center;
+
+  .btn-minus, .btn-plus {
+    @include background-transition();
+
+    background-clip: padding-box;
+    background-color: $primaryColor;
+    border-radius: 2px;
+    border: 1px solid $secondaryColor;
+    box-shadow: 0 1px 5px #ccc;
+    flex: 1;
+
+    &:hover {
+      $hoverColor: darken($primaryColor, 5%);
+      $hoverSecondaryColor: darken($secondaryColor, 10%);
+      @include background-transition();
+      background-color: $hoverColor;
+    }
+  }
+
+  .btn-minus {
+    margin-right: 5px;
+    order: 1;
+  }
+
+  .btn-plus {
+    margin-left: 5px;
+    order: 3;
+  }
+
+  .increment-display {
+    flex: 2;
+    order: 2;
+  }
+
+  .increment-value, .increment-input {
+    font-size: 2em;
+    padding: 10px 12px;
+  }
+
+  .increment-value {
+    border-bottom: 1px solid rgba(255,255,255,0);
+    border-top: 1px solid rgba(255,255,255,0);
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .increment-input {
+    margin-bottom: 0;
+    text-align: center;
+  }
+}

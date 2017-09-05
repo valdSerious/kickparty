@@ -1,0 +1,24 @@
+.invitees {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  .invitee {
+    padding: 0.5em;
+    box-sizing: border-box;
+
+    &.phantom {
+      padding: 0 .5em;
+      height: 0px;
+      width: 108px;
+      margin: 0 8px;
+    }
+
+    div {
+      text-align: center;
+    }
+  }
+}

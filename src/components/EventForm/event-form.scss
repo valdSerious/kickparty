@@ -1,0 +1,191 @@
+.event-form {
+  margin: 0px 10px;
+}
+
+.form-newEvent {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  margin-bottom: 48px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  label {
+    line-height: 2;
+    color: #777777;
+    font-weight: 700;
+  }
+
+  .calendar-wrapper {
+    @media(max-width: 599px) {
+      display: block;
+    }
+  }
+
+  .form-error {
+    color: crimson;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .form-section {
+    margin-bottom: 36px;
+  }
+
+  .form-component {
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    border-bottom: 1px solid #ACB2B8;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ACB2B8;
+    font-size: 1.6em;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+
+    em {
+      font-weight: 500;
+      font-size: .7em;
+      text-transform: none;
+      line-height: 0.7;
+    }
+  }
+
+  h2 {
+    background-color: #B3B6BF;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    line-height: 1;
+    margin: 0;
+    padding: 12px 10px;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(154, 154, 154);
+    font-size: 1.25em;
+    line-height: 1;
+
+    em {
+      font-size: .9em;
+      font-weight: 300;
+      text-transform: none;
+    }
+  }
+
+  .input-eventStatus {
+    label {
+      margin-left: 24px;
+    }
+
+    :first-child {
+      margin-left: 0
+    }
+  }
+
+  textarea, input[type='text'], input[type='time'], input[type='email'], input[type='tel'], input[type='number'], input[type='date'] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    box-shadow: 0 1px 5px #ccc;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .start-date, textarea, input {
+    margin-bottom: 10px;
+  }
+
+  textarea.description {
+    height: 253px;
+  }
+
+  .event-form__footer {
+    background-color: rgb(207, 211, 214);
+    text-align: center;
+    height: 36px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-next, .btn-prev, .btn-submit {
+    border: none;
+    color: #000000;
+    font-size: 1em;
+    font-weight: bold;
+    height: 36px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-transform: uppercase;
+  }
+
+  .btn-next {
+    background-color: #D400FF;
+  }
+
+  .btn-prev {
+    background-color: #50E3C2;
+  }
+
+  .btn-submit {
+    background-color: #B8E986;
+  }
+
+  .attendee-incrementer {
+    $diameter: 150px;
+    $radius: $diameter / 2;
+    $reductionRatio: 4;
+    $lesserDiameter: $diameter / $reductionRatio;
+    $lesserRadius: $lesserDiameter / 2;
+    $fontSize: 3em;
+
+    position: relative;
+    color: #ACB2B8;
+    cursor: pointer;
+    font-size: 3em;
+    height: $diameter;
+    width: $diameter * 1.5;
+    line-height: $diameter;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    user-select: none;
+
+    .btn-incrementer {
+      font-size: .75em;
+      position: absolute;
+      top: $radius;
+      margin-top: -$lesserDiameter / 2;
+      width: $lesserDiameter;
+      line-height: $lesserDiameter;
+      height: $lesserDiameter;
+      border-radius: $lesserRadius;
+      background-color: #B8E986;
+      box-shadow: 0 1px 5px #ccc;
+      background-clip: padding-box;
+      border: 1px solid #ccc;
+      cursor: pointer;
+
+      &.btn-inc-left {
+        left: 0;
+        margin-left: 10px;
+      }
+
+      &.btn-inc-right {
+        right: 0;
+        margin-right: 10px;
+      }
+    }
+  }
+}

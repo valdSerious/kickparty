@@ -1,0 +1,124 @@
+.event-resourceType {
+  background-color: #ffffff;
+
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+    cursor: pointer;
+
+    .btn-viewAction {
+      order: 1;
+      width: 20px;
+      text-align: right;
+
+      a {
+        color: #FFFFFF;
+      }
+    }
+
+    .resource-title {
+      order: 2;
+      flex-grow: 1;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  hr {
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    // border-top: 2px solid rgba(0, 0, 0, 0.1);
+    height: 0;
+  }
+
+  .new-resource {
+    background-color: #ffffff;
+    padding: 10px 12px;
+
+    .resource-name {
+      order: 1;
+      flex: 2;
+      margin-right: 6px;
+    }
+
+    .resource-description {
+      order: 2;
+      flex: 5;
+      margin-right: 6px;
+    }
+
+    .resource-cost {
+      order: 3;
+      flex: 1;
+      margin-right: 6px;
+    }
+
+    .add-resource {
+      order: 4;
+      flex: 1;
+      margin-bottom: 10px;
+    }
+  }
+
+  h5 {
+    font-size: 1.3em;
+    line-height: 2.5;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+  }
+
+  .public-resources, .added-resource {
+    margin-bottom: 0;
+
+    li {
+      margin-bottom: 0;
+    }
+
+    .resource-block {
+      padding: 10px 12px;
+    }
+
+    .resource-image {
+      $size: 40px;
+
+      order: 1;
+      width: $size;
+      border-radius: $size / 2;
+      height: $size;
+      background-color: #D400FF;
+      margin-right: 10px;
+
+      .initials {
+        text-align: center;
+        line-height: $size;
+        color: white;
+        font-size: 1.5em;
+      }
+    }
+
+    .resource-meta {
+      order: 2;
+      flex-grow: 1;
+    }
+
+    h4 {
+      margin-top: 0;
+      font-size: 1.2em;
+      margin-bottom: 5px;
+      line-height: 1;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-top: 0;
+    }
+  }
+
+  .added-resource {
+    .resource-image {
+      // display: none;
+    }
+  }
+}

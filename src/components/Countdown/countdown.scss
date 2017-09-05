@@ -1,0 +1,70 @@
+/*.card-box {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255,255,255,0.3);
+  height: 100px;
+  color: $darker-gray;
+  text-transform: uppercase;
+
+  &.highlight {
+    height: 40px;
+    flex: .5;
+    color: white;
+    // font-weight: bold;
+    padding-left: 0;
+    margin-left: 20px;
+    white-space: nowrap;
+
+    &.green {
+      background-color: $med-green;
+    }
+
+    &.purple {
+      background-color: $purple;
+    }
+  }
+
+  &.short {
+    height: 60px;
+  }
+  &.light {
+    background-color: rgba(255,255,255,.8);
+  }
+  &.clear {
+    background-color: transparent;
+  }
+  &.white {
+    background-color: #fff;
+  }
+  &.split {
+    margin-right: 5px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .countdown {
+    display: flex;
+    flex: 1;
+    flex-basis: 100%;
+    justify-content: center;
+    margin-right: 2px;
+
+    &.number {
+      font-size: 1.8em;
+      font-weight: bold;
+      align-self: flex-end;
+      margin-bottom: 2px;
+    }
+
+    &.text {
+      font-size: .8em;
+      font-weight: normal;
+      align-self: flex-start;
+      margin-top: 2px;
+    }
+  }
+}*/
